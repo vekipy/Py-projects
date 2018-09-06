@@ -148,17 +148,18 @@ def lavirint ():
          ras_3_prim ()
      elif unos=='l':
          print ('Odabrali ste levo.\n Prelazite preko mosta. Skrecete desno i hodate nizbrdo. \n \
-         (You have chosen right. You are going across the bridge, continue to the right and walking straight down the road.)')
+         (You have chosen left. You are going across the bridge, continue to the right and walking straight down the road.)')
          ras_5_prim ()
      return
  def ras_5 ():
      unos=raw_input ('Nailazite na veliku raskrsnicu. \n Mozete ici pravo, levo ili desno. Izaberite \n \
-     (You are on big intersection):');
+     (You are on big intersection. You can go straight, left or right, choose): ');
      if unos=='p':
-         print ('Odabrali ste da idete pravo(You have chosen right)')
+         print ('Odabrali ste da idete pravo(You have chosen straight)')
          ras_6 ()
      elif unos=='l':
-         print ('Odabrali ste levo.\n Hodate uzbrdo, skrecete levo i prelazite most.(You have chosen right)')
+         print ('Odabrali ste levo.\n Hodate uzbrdo, skrecete levo i prelazite most.\n \
+         (You have chosen left. You are turning left and going across the bridge)')
          ras_4_prim ()
      elif unos=='d':
          print ('Odabrali ste desno(You have chosen right)')
@@ -166,34 +167,38 @@ def lavirint ():
      return
 
  def slepa_5 ():
-     print ('Upali ste u mocvaru, ovo je slepa ulica. Okrenite se i vratite nazad')
+     print ('Upali ste u mocvaru, ovo je slepa ulica. Okrenite se i vratite nazad \n \
+     (You are slipped into swamp. Turn around and go back)')
      time.sleep (1)
-     unos=raw_input ('Vratili ste na raskrsnicu. \n Mozete ici pravo ili desno, izaberite:');
+     unos=raw_input ('Vratili ste na raskrsnicu. \n Mozete ici pravo ili desno, izaberite \n  \
+     (You are back on intersection. You can go straight or right, choose):');
      if unos=='p':
-         print ('Odabrali ste da idete pravo(You have chosen right)')
+         print ('Odabrali ste da idete pravo(You have chosen straight)')
          ras_5_sec ()
      elif unos=='d':
          print ('Odabrali ste desno(You have chosen right)')
-         print ('Cestitamo, pronasli ste BLAGO! :)')
+         print ('Cestitamo, pronasli ste BLAGO! :) (Congratulations, you find the treasure!)')
      return
 
  def ras_6 ():
-     unos=raw_input ('Dosli ste do raskrsnice. \n Mozete ici pravo ili levo. Izaberite:');
+     unos=raw_input ('Dosli ste do raskrsnice. \n Mozete ici pravo ili levo. Izaberite \n \
+     You are in intersection, can go straight or left, choose:');
      if unos=='p':
-         print ('Odabrali ste da idete pravo(You have chosen right)')
+         print ('Odabrali ste da idete pravo(You have chosen straight)')
          slepa_5 ()
      elif unos=='l':
-         print ('Odabrali ste levo(You have chosen right)')
-         print ('Cestitamo, pronasli ste BLAGO! :)')
+         print ('Odabrali ste levo(You have chosen left)')
+         print ('Cestitamo, pronasli ste BLAGO! :) (Congratulations, you find the treasure!)')
      return
 
  def ras_5_prim ():
-     unos=raw_input ('Dosli ste do velike raskrsnice. \n Mozete ici pravo, desno ili levo. Izaberite:');
+     unos=raw_input ('Dosli ste do velike raskrsnice. \n Mozete ici pravo, desno ili levo. Izaberite \n \
+     (You are on big intersection. You can go straight, right or left, choose):');
      if unos=='p':
-         print ('Odabrali ste da idete pravo(You have chosen right)')
+         print ('Odabrali ste da idete pravo(You have chosen straight)')
          slepa_4 ()
      elif unos=='l':
-         print ('Odabrali ste levo(You have chosen right)')
+         print ('Odabrali ste levo(You have chosen left)')
          ras_6 ()
      elif unos=='d':
          print ('Odabrali ste da idete desno(You have chosen right)')
@@ -201,12 +206,13 @@ def lavirint ():
      return
 
  def ras_5_sec ():
-     unos=raw_input ('Dosli ste do raskrsnice. \n Mozete ici pravo, levo ili desno. Izaberite:');
+     unos=raw_input ('Dosli ste do raskrsnice. \n Mozete ici pravo, levo ili desno. Izaberite \n \
+     (You are on intersection. You can go straight, right or left, choose):');
      if unos=='p':
-         print ('Odabrali ste da idete pravo(You have chosen right)')
+         print ('Odabrali ste da idete pravo(You have chosen straight)')
          ras_3_prim ()
      elif unos=='l':
-         print ('Odabrali ste levo(You have chosen right)')
+         print ('Odabrali ste levo(You have chosen left)')
          slepa_4 ()
      elif unos=='d':
          print ('Odabrali ste da idete desno(You have chosen right)')
@@ -214,47 +220,53 @@ def lavirint ():
      return
 
  def ras_4_prim ():
-     unos=raw_input ('Dosli ste do raskrsnice. \n Mozete ici desno ili levo. Izaberite:');
+     unos=raw_input ('Dosli ste do raskrsnice. \n Mozete ici desno ili levo. Izaberite \n \
+     (You are on intersection. You can go right or left, choose):');
      if unos=='d':
          print ('Odabrali ste da idete desno(You have chosen right)')
          slepa_3 ()
      elif unos=='l':
-         print ('Odabrali ste levo(You have chosen right)')
+         print ('Odabrali ste levo(You have chosen left)')
          ras_3_prim ()
      return
 
  def slepa_4 ():
-     unos=raw_input ('Usli ste u slepu ulicu, okrenite se i \n vratite se nazad. \n Mozete ici pravo, desno ili levo. Izaberite:');
+     unos=raw_input ('Usli ste u slepu ulicu, okrenite se i \n vratite se nazad. \n Mozete ici pravo, desno ili levo. Izaberite \n \
+     (You are in blind street, turn back. Now, you can go straight, right or left, choose): ');
      if unos=='d':
          print ('Odabrali ste da idete desno(You have chosen right)')
          ras_6 ()
      elif unos=='l':
-         print ('Odabrali ste levo(You have chosen right)')
+         print ('Odabrali ste levo(You have chosen left)')
          ras_3_sec ()
      elif unos=='p':
-         print ('Odabrali ste pravo(You have chosen right)')
+         print ('Odabrali ste pravo(You have chosen straight)')
          ras_4_prim ()
      return
 
  def ras_3_sec ():
-     unos=raw_input ('Dosli ste do raskrsnice. \n Mozete ici desno ili levo. Izaberite:');
+     unos=raw_input ('Dosli ste do raskrsnice. \n Mozete ici desno ili levo. Izaberite \n \
+     (You are on intersection. You can go right or left, choose):');
      if unos=='d':
          print ('Odabrali ste da idete desno(You have chosen right)')
          ras_4 ()
      elif unos=='l':
-         print ('Odabrali ste levo(You have chosen right)')
+         print ('Odabrali ste levo(You have chosen left)')
          ras_2_prim ()
      return
 
  print ('Dobro dosli u igru Lavirint. Vas zadatak je da pronadjete cup sa zlatom. \
             \n Unosenjem slova sa tastature: l,d,p birate kuda cete ici na raskrsnicama \
-            \n l- levo, d- desno ili p-pravo')
+            \n l- levo, d- desno ili p-pravo \n \
+            Welcome to the Lybirinth game. Your task is to find the treasure.\n By typing next letters you choose where you go \n \
+            l- left, d-right, p- straight')
  time.sleep (2)
- print ('Spremni....\n Pocinjemo!')
+ print ('Spremni....\n Pocinjemo! \n Are you ready?... Go!')
  time.sleep (1)
- print ('Otvarate velika drvena vrata, pred Vama se pruza dugacak put...')
+ print ('Otvarate velika drvena vrata, pred Vama se pruza dugacak put... \n \
+ You are opening a big door, there are long way in front of you...')
  time.sleep (1)
- print ('Hodate pravo...')
+ print ('Hodate pravo... \n You are walking straight...')
  ras_1 ();
  return
                 
@@ -264,7 +276,7 @@ def ocene ():
     br_jedinica=0;
     
     while True:
-        b=input('Unesi ocenu  ');
+        b=input('Unesi ocenu  \n (Input the note)');
         if b==5:
             br_petica=br_petica+1;
         elif b==1:
@@ -272,14 +284,14 @@ def ocene ():
         elif 1>b or b>5:
             break
          
-    print ('Broj petica je '+ str(br_petica))
-    print ('Broj jedinica je '+ str(br_jedinica))
+    print ('Broj petica je (The number of fives are): '+ str(br_petica))
+    print ('Broj jedinica je (The number of ones are): '+ str(br_jedinica))
     return
     
 def Program ():
     while True:
      Meni ()
-     a=input('Uneti svoj izbor (3,5,8 ili 9): ');
+     a=input('Uneti svoj izbor (3,5,8 ili 9) \n (Choose the number (3,5,8 or 9)): ');
      if a==3:
         zid ()
      elif a==5:
@@ -287,10 +299,10 @@ def Program ():
      elif a==8:
         ocene ()
      elif a==9:
-        print ('Izlazak iz programa')
+        print ('Izlazak iz programa (Program is closing)')
         sys.exit ()
      else:
-        print ('Uneli ste pogresnu vrednost, odaberite ponovo')
+        print ('Uneli ste pogresnu vrednost, odaberite ponovo \n (You input a wrong value, input again): ')
      time.sleep (1)
     return (a)
 
