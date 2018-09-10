@@ -1,7 +1,8 @@
 
-#Autor: A.Veljovic (vekipy)
+#Autor: A.Veljovic 
 #The program allows you to choose from menu what task you want to execute. You can choose between three tasks or to exit
 #by typing given number from the list.
+#The program is still in porgress.
 
 import sys
 import time
